@@ -1,0 +1,45 @@
+{
+  "source_image": "mclaw-gateway-v7.tar",
+  "source_image_sha256": "51ff5497473bcbe95573541d8b76d70b6547d75ecadbd62024af6edaff8895dd",
+  "image_architecture": "linux/amd64",
+  "image_command": [
+    "python",
+    "mclaw_gateway.py",
+    "--host",
+    "0.0.0.0",
+    "--port",
+    "8790"
+  ],
+  "plugin_upstream_commit": "3055f416841c1393ec04294a702603fd41e840aa",
+  "protocol": 1,
+  "adaptation": "Independent Rust Provider using the existing SDK; no Python runtime or Docker required.",
+  "source_files": {
+    "mclaw_direct.py": {
+      "sha256": "2beff7cd11d006a4bc18f527ce8ab7caf841c9d2df618f4eda5422d28e8add43",
+      "bytes": 14982
+    },
+    "mclaw_gateway.py": {
+      "sha256": "7a814db8b096e1c5ff0cd119bcb6cdb6b37c462722032ef624d89c0cc44601f6",
+      "bytes": 85132
+    }
+  },
+  "qr_login_reference": {
+    "repository": "https://github.com/wyq2822875262/139cloudDiskAutoSave",
+    "reference_commit": "1c0e79b485c87bab0f7b4e9ccd2aa3b033b33b68",
+    "files": {
+      "src/api/qrLogin.ts": {
+        "sha256": "a6476dd16c65febc6cc20e7fe78eb1b4d774209d5e99d71e2144a188de2b7458",
+        "bytes": 19152
+      },
+      "src/api/crypto.ts": {
+        "sha256": "44259529397093e501e68e5fab07807516306c65b158fe61a19eb60491b806cc",
+        "bytes": 9289
+      },
+      "src/api/139cloud.ts": {
+        "sha256": "e1cde71f075a14f6d3f57df6e813b95ddf50a18ae305312378fe2737d89f042b",
+        "bytes": 30092
+      }
+    },
+    "note": "File hashes identify the supplied reference sources independently of the reference commit."
+  }
+}

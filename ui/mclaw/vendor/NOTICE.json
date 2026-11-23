@@ -1,0 +1,14 @@
+[
+  {
+    "package": "qrcode",
+    "version": "1.5.4",
+    "license": "qrcode_1.5.4.LICENSE",
+    "sha256": "8df47c6ad9ac2c41eb9b2a72def9908959da0ede8dadd56c7b249c1bdb0c5ce6"
+  },
+  {
+    "package": "dijkstrajs",
+    "version": "1.0.3",
+    "license": "dijkstrajs_1.0.3.LICENSE",
+    "sha256": "c46324e45a005413535a6fb7a97e9eacd3cc6bf30335b7d5c10b8ee3af9e60c2"
+  }
+]

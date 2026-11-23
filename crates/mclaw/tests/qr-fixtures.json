@@ -1,0 +1,10 @@
+{
+  "body": {
+    "dycpwd": "Ab0123456789xyZQ",
+    "pintype": 21,
+    "message": "扫码 !()*"
+  },
+  "wire": "AAECAwQFBgcICQoLDA0OD5Ubkam3+jiJIz1jHdN+rwWxnZrgao+k9oc0p5yjZAvSWJu7XSkMy/cGgDwb54ZCot7zQRsTfgH9VeYQgbhyDhtFFgt8hGWuDpb6QwEdfwGk",
+  "sign": "2026-11-17 12:34:56,Ab0123456789xyZQ,1A0CF7744F724124AD6183D7A209025E",
+  "successWire": "AAECAwQFBgcICQoLDA0OD7IzXd9DqU95ovWQyTkSZ+lJGsE4bFThh5IPgEL0DS0f9lcIJPfrDXdvBE0nNNZWDZEXiF5n2OpUGSyvp1pXpBBnK/H70XrZukvma57U6inabnZ6MWjwGoWxCbv8ewu68gPaqkeKorEc5Lp9Tl+nB7T0Zdb3YMdFiLIwo3NLLz6AbNtnsMStbjG0LFV3gMn5W4rIKVZPIEAZjLXGzfwFCuk="
+}

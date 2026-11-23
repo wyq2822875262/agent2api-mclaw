@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>MClaw 登录</title>
+  <link rel="stylesheet" href="./page.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <main>
+    <section class="intro">
+      <span class="eyebrow">MClaw · 移动云盘</span>
+      <h1>连接你的<br>移动云盘账户</h1>
+      <p>在手机上确认登录，账户会自动加入 Agent2API。</p>
+      <ol>
+        <li>打开中国移动云盘 App 的扫一扫。</li>
+        <li>扫描二维码，在手机上确认登录。</li>
+        <li>回到账户列表，刷新模型目录。</li>
+      </ol>
+      <p class="muted">登录凭证过期后，可再次扫码更新登录状态。</p>
+    </section>
+    <section class="card" aria-label="添加 MClaw 账户">
+      <div class="tabs" role="tablist" aria-label="登录方式">
+        <button id="qr-tab" type="button" role="tab" aria-selected="true" aria-controls="qr-panel">扫码登录</button>
+        <button id="manual-tab" type="button" role="tab" aria-selected="false" aria-controls="manual-panel">手动导入</button>
+      </div>
+      <label class="proxy">登录出网方式
+        <select id="proxy-mode">
+          <option value="gateway">使用网关出口</option>
+          <option value="direct">直连</option>
+        </select>
+      </label>
+      <div id="error" role="alert" hidden></div>
+      <section id="qr-panel" role="tabpanel" aria-labelledby="qr-tab">
+        <div id="qr-box" class="qr-box">
+          <div id="qr-empty">点击生成二维码</div>
+          <img id="qr-image" alt="使用移动云盘 App 扫描此二维码登录" width="280" height="280" hidden>
+        </div>
+        <p id="qr-status" class="status" role="status" aria-live="polite">二维码有效期为 5 分钟。</p>
+        <p id="countdown" class="muted" aria-live="off"></p>
+        <div class="actions">
+          <button id="generate" class="primary" type="button">生成二维码</button>
+          <button id="cancel" type="button" disabled>取消登录</button>
+        </div>
+      </section>
+      <section id="manual-panel" role="tabpanel" aria-labelledby="manual-tab" hidden>
+        <form id="manual-form">
+          <label>导入方式<select id="manual-method"><option value="0">手机号 + Token</option><option value="1">Basic / Cookie</option></select></label>
+          <label id="phone-label">手机号<input id="phone" type="tel" inputmode="tel" autocomplete="off" placeholder="11 位手机号，支持 +86 前缀" required></label>
+          <label><span id="token-label">登录 Token</span><input id="token" type="password" autocomplete="new-password" spellcheck="false" placeholder="粘贴完整登录凭证" required></label>
+          <label>渠道 ID<input id="channel" value="102001" inputmode="numeric" pattern="[0-9]+" required></label>
+          <label>备注名（可选）<input id="name" maxlength="100" autocomplete="off" placeholder="我的移动云盘"></label>
+          <button id="import" class="primary" type="submit">添加账户</button>
+          <p id="manual-status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <p class="footnote">账户由当前网关保存。请仅登录你自己的账户。</p>
+    </section>
+  </main>
+</body>
+</html>
