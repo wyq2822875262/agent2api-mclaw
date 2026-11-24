@@ -1,17 +1,8 @@
 {
   "id": "agent2api-mclaw",
   "name": "MClaw 移动云盘",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "protocol": 1,
-  "ui": [
-    {
-      "id": "mclaw-login",
-      "title": "MClaw 登录",
-      "entry": "mclaw/index.html",
-      "group": "g-system",
-      "order": 30
-    }
-  ],
   "providers": [
     {
       "id": "mclaw",
@@ -21,11 +12,7 @@
     }
   ],
   "entry": {
-    "x86_64-pc-windows-msvc": "bin/agent2api-mclaw.exe",
-    "aarch64-apple-darwin": "bin/agent2api-mclaw",
-    "x86_64-apple-darwin": "bin/agent2api-mclaw",
-    "x86_64-unknown-linux-gnu": "bin/agent2api-mclaw",
-    "aarch64-unknown-linux-gnu": "bin/agent2api-mclaw"
+    "wasm32-unknown-unknown": "mclaw.wasm"
   },
   "homepage": "https://github.com/wyq2822875262/agent2api-mclaw"
 }
